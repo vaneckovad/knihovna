@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Přehled literárních žánrů – Literární svět">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žánry | Literární svět</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+<header>
+    <h1>Žánry</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="poezie.html">Poezie</a></li>
+        <li><a href="proza.html">Próza</a></li>
+        <li><a href="drama.html">Drama</a></li>
+        <li><a class="active" href="zanry.html">Žánry</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <main>
+        <h2>Přehled literárních žánrů</h2>
+
+        <p>Níže najdeš základní rozdělení žánrů. Můžeš použít vyhledávací pole k rychlému filtrování.</p>
+
+        <label for="search">Vyhledat žánr:</label>
+        <input id="search" type="text" oninput="filterGenres()" placeholder="např. fantasy, sci-fi, romantika" aria-label="Vyhledat žánr">
+
+        <section id="genres-list">
+            <article class="genre"><h3>Fantasy</h3><p>Žánr s prvky magie, jinými světy a nadpřirozenými bytostmi.</p></article>
+            <article class="genre"><h3>Sci-fi</h3><p>Vědecky laděná fikce: budoucnost, technologie, vesmír.</p></article>
+            <article class="genre"><h3>Horor</h3><p>Žánr navozující strach, napětí a hrůzu.</p></article>
+            <article class="genre"><h3>Romantika</h3><p>Příběhy zaměřené na milostné vztahy a emocionální vývoj postav.</p></article>
+            <article class="genre"><h3>Detektivka</h3><p>Příběhy řešící záhady, zločiny a jejich vyšetřování.</p></article>
+            <article class="genre"><h3>Historický román</h3><p>Děj odehrávající se v historickém období, často s reálnými událostmi nebo postavami.</p></article>
+            <article class="genre"><h3>Young Adult (YA)</h3><p>Literatura cílená na mladé čtenáře, často o dospívání a hledání identity.</p></article>
+            <article class="genre"><h3>Biografie</h3><p>Životopisné příběhy skutečných osob.</p></article>
+        </section>
+
+        <button onclick="scrollTop()">Zpět nahoru</button>
+    </main>
+
+    <aside>
+        <h3>Tipy</h3>
+        <p>Každý žánr se může kombinovat — např. historické sci-fi nebo romantická fantasy. V popiscích u knih nezapomínej na alt u obrázků a optimalizaci velikosti obrazků.</p>
+    </aside>
+</div>
+
+<footer>
+    <p>© 2025 Literární svět</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
