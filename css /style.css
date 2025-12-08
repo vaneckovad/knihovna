@@ -61,18 +61,23 @@ aside form button {
 }
 
 button {#themeToggle {
-    font-size: 22px;
-    padding: 6px 10px;
-    border-radius: 8px;
-    border: 1px solid #888;
-    background: #fff;
+    background: none;
+    border: none;
+    font-size: 26px;
     cursor: pointer;
+    padding: 5px 10px;
 }
 
-.dark #themeToggle {
-    background: #333;
-    color: #fff;
-    border-color: #aaa;
+#themeToggle .sun {
+    display: none; /* na začátku se zobrazuje jen moon */
+}
+
+.dark #themeToggle .sun {
+    display: inline;
+}
+
+.dark #themeToggle .moon {
+    display: none;
 }
 
 .dark {
@@ -97,4 +102,5 @@ button {#themeToggle {
 .dark aside {
     background-color: #2a2a2a;
 }
+
 
