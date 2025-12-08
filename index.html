@@ -15,7 +15,7 @@
 <body>
 <header>
     <h1>Literární svět</h1>
-    <button onclick="toggleTheme()">Tmavý režim</button>
+    <button id="themeToggle" onclick="toggleTheme()">🌙</button>
 </header>
 
 <nav>
@@ -33,18 +33,25 @@
         <p>Literatura z latinského slova littera = písmeno → písemnictví = veškeré písemné záznamy; v užším slova smyslu literární umělecké dílo.</p>
         <h2>Co jsou literární druhy?</h2>
         <p>Literární druhy představují základní způsob členění literatury. Dělíme je na prózu, poezii a drama. Každý druh má svá specifika, formu a jazykové prostředky.</p>
-        <p>Použij navigaci vlevo a objev jednotlivé kategorie.</p>
-        <button onclick="scrollTop()">Zpět nahoru</button>
+        <p>Literatura ale můžeme dělit také na: 
+            umělecké (krásná, beletrie) – zaměřená na estetický zážitek, k pobavení, rozptýlení, úvahám o životě.
+            odborná – zaměřená na poznání, poučení sdělení; obsahuje ověřitelné poznatky. Vyznačuje se věcností a tlumočením faktických poznatků.
+            náboženská (liturgická) – obsahuje těžko ověřitelné poznatky, tlumočí víru v existenci bytostí, které ovlivňují lidské jednání a život.
+            věcná (jednací písemnosti) – protokoly, žádosti, vyhlášky, předpisy, zákony.
+            publicistická – přináší nejenom informace, ale i subjektivní hodnocení autora, vede k zamyšlení – fejetony, reportáže.</p>
     </main>
 
     <aside>
-        <h3>Doporučené knihy</h3>
-        <ul>
-            <li>Erben – Kytice</li>
-            <li>Čapek – R.U.R.</li>
-            <li>Dostojevskij – Idiot</li>
-        </ul>
-    </aside>
+    <h3>Pošli nám tip na knihu</h3>
+
+    <form action="mailto:vaneckovad@vosis.cz" method="POST" enctype="text/plain">
+        <label for="bookTip">Tvůj tip:</label><br>
+        <textarea id="bookTip" name="Tip na knihu" rows="6" placeholder="Sem napiš doporučenou knihu..." required></textarea><br><br>
+
+        <button type="submit">Odeslat tip</button>
+    </form>
+</aside>
+
 </div>
 
 <footer>
@@ -54,6 +61,7 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+
 
 
 
