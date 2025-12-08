@@ -1,12 +1,12 @@
 body {
     font-family: "Times New Roman", Times, serif;
-    margin: 0;
-    background:  #f8f5f0;
+     margin: 0;
+    background: #f8f5f0;
     color: #222;
 }
 
 header, footer {
-    background: #54804f;
+    background: #d9c4a1;
     padding: 20px;
     text-align: center;
 }
@@ -45,20 +45,56 @@ main {
     padding: 20px;
 }
 
-aside {
-    width: 20%;
-    padding: 20px;
-    background: #efe6dd;
+aside textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+aside h3 {
+    margin-top: 0;
+}
+aside form button {
+    width: 100%;
 }
 
-button {
-    padding: 8px 15px;
-    margin-top: 20px;
+button {#themeToggle {
+    font-size: 22px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background: #fff;
+    cursor: pointer;
+}
+
+.dark #themeToggle {
+    background: #333;
+    color: #fff;
+    border-color: #aaa;
 }
 
 .dark {
     background: #222;
     color: #eee;
 }
+.dark {
+    background-color: #1d1d1d;
+    color: #f2f2f2;
+}
 
+.dark header,
+.dark footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark nav ul {
+    background-color: #444;
+}
+
+.dark aside {
+    background-color: #2a2a2a;
+}
 
