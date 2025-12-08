@@ -79,6 +79,19 @@ aside form button {
 }
 
 /* ---------- DARK MODE ---------- */
+/* Textarea v dark režimu */
+.dark aside textarea {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+/* Tlačítko v dark režimu */
+.dark aside form button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #777;
+}
 
 .dark {
     background-color: #1d1d1d;
@@ -134,4 +147,5 @@ aside form button {
         align-items: center;
     }
 }
+
 
