@@ -125,7 +125,7 @@ aside form button {
 
 /* aside */
 .dark aside {
-    background-color: #2a2a2a;
+    background-color: #1d1d1d;
     color: #fff;
 }
 
@@ -147,5 +147,6 @@ aside form button {
         align-items: center;
     }
 }
+
 
 
