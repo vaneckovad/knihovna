@@ -1,6 +1,8 @@
+/* ZÁKLADNÍ STYLY – SVĚTLÝ REŽIM */
+
 body {
     font-family: "Times New Roman", Times, serif;
-     margin: 0;
+    margin: 0;
     background: #f8f5f0;
     color: #222;
 }
@@ -53,14 +55,18 @@ aside textarea {
     border: 1px solid #ccc;
     resize: vertical;
 }
+
 aside h3 {
     margin-top: 0;
 }
+
 aside form button {
     width: 100%;
 }
 
-button {#themeToggle {
+/* TLAČÍTKO PRO DARK MODE */
+
+#themeToggle {
     background: none;
     border: none;
     font-size: 26px;
@@ -69,9 +75,17 @@ button {#themeToggle {
 }
 
 #themeToggle .sun {
-    display: none; /* na začátku se zobrazuje jen moon */
+    display: none;
 }
 
+/* ---------- DARK MODE ---------- */
+
+.dark {
+    background-color: #1d1d1d;
+    color: #f2f2f2;
+}
+
+/* přepínání ikon */
 .dark #themeToggle .sun {
     display: inline;
 }
@@ -80,27 +94,31 @@ button {#themeToggle {
     display: none;
 }
 
-.dark {
-    background: #222;
-    color: #eee;
-}
-.dark {
-    background-color: #1d1d1d;
-    color: #f2f2f2;
-}
-
+/* header + footer v dark mode */
 .dark header,
 .dark footer {
     background-color: #333;
     color: #fff;
 }
 
+/* navigace */
 .dark nav ul {
     background-color: #444;
 }
 
-.dark aside {
-    background-color: #2a2a2a;
+.dark nav a {
+    color: #fff;
 }
 
+/* aside */
+.dark aside {
+    background-color: #2a2a2a;
+    color: #fff;
+}
 
+/* tlačítka */
+.dark button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
