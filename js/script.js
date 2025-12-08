@@ -16,8 +16,6 @@ function toggleTheme() {
     }
 }
 
-
-
 // Filtrování žánrů na stránce Žánry
 function filterGenres() {
     const input = document.getElementById("search");
@@ -31,5 +29,21 @@ function filterGenres() {
         item.style.display = text.includes(q) ? "" : "none";
     });
 }
+// Jednoduché potvrzení odeslání tipu
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("tipForm");
+    const message = document.getElementById("tipMessage");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // zabrání refreshi
+
+        message.textContent = "Děkujeme! Tvůj tip byl uložen.";
+        message.style.display = "block";
+
+        form.reset();
+    });
+});
+
+
 
 
