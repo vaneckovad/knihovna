@@ -1,7 +1,19 @@
 // Přepínání tmavého / světlého režimu
 function toggleTheme() {
     document.body.classList.toggle("dark");
+
+    const btn = document.getElementById("themeToggle");
+
+    // Pokud je zapnutý dark mode → ukaž sluníčko
+    if (document.body.classList.contains("dark")) {
+        btn.textContent = "☀️";
+    } 
+    // Jinak ukaž měsíček
+    else {
+        btn.textContent = "🌙";
+    }
 }
+
 
 // Filtrování žánrů na stránce Žánry
 function filterGenres() {
@@ -16,3 +28,4 @@ function filterGenres() {
         item.style.display = text.includes(q) ? "" : "none";
     });
 }
+
