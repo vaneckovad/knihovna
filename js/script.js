@@ -2,17 +2,20 @@
 function toggleTheme() {
     document.body.classList.toggle("dark");
 
+    const isDark = document.body.classList.contains("dark");
     const btn = document.getElementById("themeToggle");
 
-    // Pokud je zapnutý dark mode → ukaž sluníčko
-    if (document.body.classList.contains("dark")) {
-        btn.textContent = "☀️";
-    } 
-    // Jinak ukaž měsíček
-    else {
-        btn.textContent = "🌙";
+    // Při tmavém režimu zobrazíme sluníčko
+    if (isDark) {
+        btn.querySelector(".moon").style.display = "none";
+        btn.querySelector(".sun").style.display = "inline";
+    } else {
+        // Při světlém režimu zobrazíme měsíček
+        btn.querySelector(".moon").style.display = "inline";
+        btn.querySelector(".sun").style.display = "none";
     }
 }
+
 
 
 // Filtrování žánrů na stránce Žánry
@@ -28,4 +31,5 @@ function filterGenres() {
         item.style.display = text.includes(q) ? "" : "none";
     });
 }
+
 
