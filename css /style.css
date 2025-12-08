@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
-    background: #f8f5f0;
+    background: #5a7a3b;
     color: #222;
 }
 
@@ -14,7 +14,7 @@ header, footer {
 nav ul {
     list-style: none;
     padding: 0;
-    background: #f0e6d8;
+    background: #5a7a3b;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -60,3 +60,4 @@ button {
     background: #222;
     color: #eee;
 }
+
