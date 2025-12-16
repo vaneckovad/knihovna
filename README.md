@@ -4,13 +4,11 @@
 Statický web věnovaný základnímu přehledu literárních druhů a žánrů.  
 Projekt slouží jako studijní a informační web, který přehledně vysvětluje rozdíly mezi prózou, poezií a dramatem.
 
----
 
 ## Odkaz na web
 
  https://vaneckovad.github.io/knihovna/
 
----
 
 ## Obsah webu
 
@@ -24,7 +22,6 @@ Web obsahuje následující stránky:
 
 Součástí úvodní stránky je také jednoduchý formulář pro zadání tipu na knihu.
 
----
 
 ## Použité technologie
 
@@ -33,7 +30,6 @@ Součástí úvodní stránky je také jednoduchý formulář pro zadání tipu 
 - **JavaScript** – přepínání světlého / tmavého režimu, jednoduchá práce s formulářem  
 - **GitHub Pages** – zveřejnění webu na internetu  
 
----
 
 ## Funkce webu
 
@@ -42,8 +38,6 @@ Součástí úvodní stránky je také jednoduchý formulář pro zadání tipu 
 - samostatná tisková verze (`print.css`)  
 - smysluplná navigace mezi stránkami  
 - formulář bez odesílání dat na server (statické řešení)  
-
----
 
 
 
