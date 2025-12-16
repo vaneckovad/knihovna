@@ -6,13 +6,13 @@ Projekt slouží jako studijní a informační web, který přehledně vysvětlu
 
 ---
 
-## 🌐 Odkaz na web
+## Odkaz na web
 
-👉 https://vaneckovad.github.io/knihovna/
+ https://vaneckovad.github.io/knihovna/
 
 ---
 
-## 📚 Obsah webu
+## Obsah webu
 
 Web obsahuje následující stránky:
 
@@ -26,7 +26,7 @@ Součástí úvodní stránky je také jednoduchý formulář pro zadání tipu 
 
 ---
 
-## 🛠 Použité technologie
+## Použité technologie
 
 - **HTML5** – struktura webu  
 - **CSS3** – vzhled, layout, tisková verze, tmavý režim  
@@ -35,7 +35,7 @@ Součástí úvodní stránky je také jednoduchý formulář pro zadání tipu 
 
 ---
 
-## 🎨 Funkce webu
+## Funkce webu
 
 - responzivní layout (použitelný i na mobilních zařízeních)  
 - tmavý / světlý režim přepínatelný tlačítkem  
